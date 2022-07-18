@@ -1,6 +1,7 @@
 # http://editorconfig.org
 # Kommentar hier
 root = true
+# auch von mir
 
 [*]
 indent_style = space
