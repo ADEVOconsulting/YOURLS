@@ -12,23 +12,23 @@
  */
 
 /** MySQL database username */
-define( 'YOURLS_DB_USER', 'your db user name' );
+define( 'YOURLS_DB_USER', getenv('YOURLS_DB_USER') );
 
 /** MySQL database password */
-define( 'YOURLS_DB_PASS', 'your db password' );
+define( 'YOURLS_DB_PASS', getenv('YOURLS_DB_PASS') );
 
 /** The name of the database for YOURLS
  ** Use lower case letters [a-z], digits [0-9] and underscores [_] only */
-define( 'YOURLS_DB_NAME', 'yourls' );
+define( 'YOURLS_DB_NAME', getenv('YOURLS_DB_NAME') );
 
 /** MySQL hostname.
  ** If using a non standard port, specify it like 'hostname:port', e.g. 'localhost:9999' or '127.0.0.1:666' */
-define( 'YOURLS_DB_HOST', 'localhost' );
+define( 'YOURLS_DB_HOST', getenv('YOURLS_DB_HOST') );
 
 /** MySQL tables prefix
  ** YOURLS will create tables using this prefix (eg `yourls_url`, `yourls_options`, ...)
  ** Use lower case letters [a-z], digits [0-9] and underscores [_] only */
-define( 'YOURLS_DB_PREFIX', 'yourls_' );
+define( 'YOURLS_DB_PREFIX', getenv('YOURLS_DB_PREFIX') );
 
 /*
  ** Site options
@@ -38,7 +38,7 @@ define( 'YOURLS_DB_PREFIX', 'yourls_' );
  ** All lowercase, no trailing slash at the end.
  ** If you define it to "http://sho.rt", don't use "http://www.sho.rt" in your browser (and vice-versa)
  ** To use an IDN domain (eg http://héhé.com), write its ascii form here (eg http://xn--hh-bjab.com) */
-define( 'YOURLS_SITE', 'http://your-own-domain-here.com' );
+define( 'YOURLS_SITE', getenv('YOURLS_SITE'));
 
 /** YOURLS language
  ** Change this setting to use a translation file for your language, instead of the default English.
@@ -64,7 +64,7 @@ define( 'YOURLS_COOKIEKEY', 'modify this text with something random' );
  ** YOURLS will auto encrypt plain text passwords in this file
  ** Read http://yourls.org/userpassword for more information */
 $yourls_user_passwords = [
-	'username' => 'password',
+	getenv('username') => getenv('password'),
 	// 'username2' => 'password2',
 	// You can have one or more 'login'=>'password' lines
 ];
