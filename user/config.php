@@ -23,7 +23,7 @@ define( 'YOURLS_DB_NAME', getenv('YOURLS_DB_NAME') );
 
 /** MySQL hostname.
  ** If using a non standard port, specify it like 'hostname:port', e.g. 'localhost:9999' or '127.0.0.1:666' */
-define( 'YOURLS_DB_HOST', getenv('YOURLS_DB_HOST') );
+define( 'YOURLS_DB_HOST', getenv('MYSQLSERVICENAME_SERVICE_HOST') );
 
 /** MySQL tables prefix
  ** YOURLS will create tables using this prefix (eg `yourls_url`, `yourls_options`, ...)
