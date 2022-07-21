@@ -9,6 +9,9 @@
 
 # Ignore everything in user/
 user/*
+# languages
+!user/languages
+!user/languages/*
 # ... except config sample
 !user/config.php
 # ... core plugins
