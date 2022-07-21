@@ -2,7 +2,7 @@
 ## YOURLS
 
 # Ignore server configuration files
-.htaccess
+#.htaccess
 *.config
 *.conf
 [Rr]obots.txt
